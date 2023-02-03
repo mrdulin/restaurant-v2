@@ -5,7 +5,7 @@ import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-const SelectLabels = () => {
+const SelectLanguage = () => {
     const [language, setLanguage] = useState('English');
 
     const handleChange = (event) => {
@@ -95,4 +95,4 @@ const SelectLabels = () => {
     )
 }
 
-export default SelectLabels;
+export default SelectLanguage;

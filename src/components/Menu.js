@@ -6,7 +6,7 @@ import Items from './Items';
 const Menu = () => {
     const appetizers = Database.listApps(); // an array of objects
     return(
-        <div classname='menu'>
+        <div className='menu'>
             {appetizers.map(item => <Items 
             engName={item.engName} 
             engDescription={item.engDescription} 

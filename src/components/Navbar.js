@@ -5,8 +5,6 @@ import  LanguageSelect  from './LanguageSelect';
 
 const Navbar = () => {
   const [value, setValue] = useState(0);
-  const [language, setLanguage] = useState('Eng');
-
 
   return (
     <BottomNavigation
@@ -17,9 +15,9 @@ const Navbar = () => {
         setValue(newValue);
       }}
     >
-      <BottomNavigationAction label="Appetizers" />
-      <BottomNavigationAction label="Entree" />
-      <BottomNavigationAction label="Dessert" />
+      <BottomNavigationAction style={{ fontSize: '20vw' }} label="Appetizers" />
+      <BottomNavigationAction style={{ fontSize: '20vw' }} label="Entree" />
+      <BottomNavigationAction style={{ fontSize: '20vw' }} label="Dessert" />
 
       <LanguageSelect />
     </BottomNavigation>

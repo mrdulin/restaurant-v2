@@ -14,7 +14,9 @@ const SelectLabels = () => {
         // Add show class to selected language and add hide to other two
         // When you pick english
         if (event.target.value === "English") {
+            console.log("English language selected")
             const englishElements = document.querySelectorAll(".English");
+            console.log(englishElements)
             englishElements.forEach((element) => {
                 element.classList.remove("hide");
                 element.classList.add("show");
@@ -34,6 +36,7 @@ const SelectLabels = () => {
         }
         // When you pick korean
         else if (event.target.value === "Korean") {
+            console.log("Korean language selected")
             const englishElements = document.querySelectorAll(".English");
             englishElements.forEach((element) => {
                 element.classList.remove("show");
@@ -54,6 +57,7 @@ const SelectLabels = () => {
         }
         // When you pick chinese
         else if (event.target.value === "Chinese") {
+            console.log("Chinese language selected")
             const englishElements = document.querySelectorAll(".English");
             englishElements.forEach((element) => {
                 element.classList.remove("show");
@@ -91,4 +95,4 @@ const SelectLabels = () => {
     )
 }
 
-export default SelectLabels
+export default SelectLabels;

@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div id='window'>
       {/* <LanguageSelect/> */}
-      {/* <Menu /> */}
+      <Menu />
       <Navbar/>
     </div>
   );

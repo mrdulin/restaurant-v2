@@ -15,7 +15,7 @@ const Items = (props) => {
                 />
 
                 <div>
-                    <CardContent className='show'>
+                    <CardContent className='show english'>
                         <Typography
                             gutterBottom
                             variant="h5"
@@ -34,7 +34,7 @@ const Items = (props) => {
                         </Typography>
                     </CardContent>
 
-                    <CardContent className='hide'>
+                    <CardContent className='hide korean'>
                         <Typography
                             gutterBottom
                             variant="h5"

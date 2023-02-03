@@ -1,0 +1,44 @@
+#root, #window, body{
+  min-height: 100vh;
+  position: relative
+}
+
+#navbar {
+  background-color: rgb(255, 0, 0);
+  position: fixed;
+  top:0;
+  width: 100vw;
+}
+
+#window {
+  flex-direction: column;
+  position: static;
+}
+
+.item {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.topStick {
+  position: fixed;
+  top: 100;
+  display: none;
+}
+
+.bottomStick {
+  position: fix;
+  bottom: 0;
+  display: none;
+}
+

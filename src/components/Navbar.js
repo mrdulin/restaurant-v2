@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
+import  LanguageSelect  from './LanguageSelect';
 // Bottom nav, allows users to navigate between food categories quickly
 
 const Navbar = () => {
@@ -19,6 +20,8 @@ const Navbar = () => {
       <BottomNavigationAction label="Appetizers" />
       <BottomNavigationAction label="Entree" />
       <BottomNavigationAction label="Dessert" />
+
+      <LanguageSelect />
     </BottomNavigation>
   )
 };

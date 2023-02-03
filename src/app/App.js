@@ -7,9 +7,9 @@ import { Menu, Navbar, LanguageSelect } from '../components';
 const App = () => {
   return (
     <div id='window'>
-      <LanguageSelect/>
+      {/* <LanguageSelect/> */}
       {/* <Menu /> */}
-      {/* <Navbar/> */}
+      <Navbar/>
     </div>
   );
 };

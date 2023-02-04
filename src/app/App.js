@@ -7,9 +7,9 @@ import { Menu, Navbar, LanguageSelect, HideShowDemo } from '../components';
 const App = () => {
   return (
     <div id='window'>
-      <HideShowDemo/>
-      {/* <LanguageSelect/> */}
-      {/* <Menu /> */}
+      {/* <HideShowDemo/> */}
+      <LanguageSelect/>
+      <Menu />
       {/* <Navbar/> */}
     </div>
   );

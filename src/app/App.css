@@ -3,13 +3,13 @@
   position: relative
 }
 
-#navbar {
+/* #navbar {
   background-color: rgb(255, 0, 0);
   position: fixed;
   top:0;
   width: 100vw;
-  height: 20vw;
-}
+  height: 20vh;
+} */
 
 #window {
   flex-direction: column;

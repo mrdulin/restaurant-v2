@@ -8,9 +8,9 @@ const App = () => {
   return (
     <div id='window'>
       {/* <HideShowDemo/> */}
-      <LanguageSelect/>
+      {/* <LanguageSelect/> */}
       <Menu />
-      {/* <Navbar/> */}
+      <Navbar/>
     </div>
   );
 };

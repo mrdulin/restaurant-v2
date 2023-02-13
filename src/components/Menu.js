@@ -8,9 +8,9 @@ const Menu = () => {
     return (
         <div className='menu'>
 
-            <div id='apps'>
+            <div id='apps' class="apps">
                 <h1>Appetizers</h1>
-                {appetizers.map(item => <Items
+                {appetizers.map(item => <Items className='apps'
                     engName={item.engName}
                     engDescription={item.engDescription}
                     korName={item.korName}
@@ -19,9 +19,9 @@ const Menu = () => {
                     image={item.image} />)}
             </div>
 
-            <div id='entrees'>
+            <div id='entrees' class="entrees">
                 <h1>Entrees</h1>
-                {appetizers.map(item => <Items
+                {appetizers.map(item => <Items className='entrees'
                     engName={item.engName}
                     engDescription={item.engDescription}
                     korName={item.korName}
@@ -30,9 +30,9 @@ const Menu = () => {
                     image={item.image} />)}
             </div>
 
-            <div id='family'>
+            <div id='family' class="family">
                 <h1>Family Meals</h1>
-                {appetizers.map(item => <Items
+                {appetizers.map(item => <Items className='family'
                     engName={item.engName}
                     engDescription={item.engDescription}
                     korName={item.korName}

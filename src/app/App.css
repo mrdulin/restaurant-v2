@@ -1,9 +1,19 @@
-#root, #window, body{
+/* #root, #window, body{
   min-height: 100vh;
-  position: relative
+  min-width: 100vw;
+} */
+head {
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -12,14 +22,16 @@ nav {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 15%;
+  height: 10%;
+  max-height: 80px;
+  min-height: 45px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: white;
-  padding: 0 1rem;
+  color: burlywood;
+  background-color: grey;
+  font-size: 3vw;
 }
 
 nav li {
@@ -31,7 +43,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -41,12 +53,25 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.apps {
+  background-color: beige;
+}
+
+.entrees {
+  background-color: bisque;
+}
+
+.family {
+  background-color: rgb(184, 119, 41);
 }
 
 #window {
@@ -66,18 +91,6 @@ nav ul {
 }
 
 .hide {
-  display: none;
-}
-
-.topStick {
-  position: fixed;
-  top: 100;
-  display: none;
-}
-
-.bottomStick {
-  position: fix;
-  bottom: 0;
   display: none;
 }
 

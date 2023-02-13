@@ -7,7 +7,7 @@ import { Menu, Navbar } from '../components';
 const App = () => {
   return (
     <div id='window'>
-      <Menu />
+      <Menu id='menu'/>
       <Navbar />
     </div>
   );

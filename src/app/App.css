@@ -1,12 +1,17 @@
-/* #root, #window, body{
-  min-height: 100vh;
-  min-width: 100vw;
-} */
-head {
-  height: 0;
-  width: 0;
-  margin: 0;
-  padding: 0;
+* {
+  font-family: "AACHEN BOLD", sans-serif;
+}
+
+.apps {
+  background-color: rgb(223, 223, 132) !important;
+}
+
+.entrees {
+  background-color: rgb(174, 230, 121) !important;
+}
+
+.family {
+  background-color: rgb(206, 144, 69) !important;
 }
 
 html, body {
@@ -17,12 +22,17 @@ html, body {
   scroll-behavior: smooth;
 }
 
+#menu {
+  position: fixed;
+  bottom: 13vh;
+}
+
 nav {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 10%;
+  width: 100vw;
+  height: 13vh;
   max-height: 80px;
   min-height: 45px;
   display: flex;
@@ -39,6 +49,11 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+nav li:nth-child(-n + 3) {
+  flex-grow: 1;
+  width: 0;
 }
 
 nav a {
@@ -62,23 +77,6 @@ nav ul {
   align-items: stretch;
 }
 
-.apps {
-  background-color: beige;
-}
-
-.entrees {
-  background-color: bisque;
-}
-
-.family {
-  background-color: rgb(184, 119, 41);
-}
-
-#window {
-  flex-direction: column;
-  position: static;
-}
-
 .item {
   margin: 5px;
   display: grid;
@@ -94,6 +92,6 @@ nav ul {
   display: none;
 }
 
-.english {
+/* .english {
   color: blue;
-}
+} */

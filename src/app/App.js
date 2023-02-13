@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import { Menu, Navbar, LanguageSelect, HideShowDemo } from '../components';
+import { Menu, Navbar, NavbarV2, LanguageSelect, HideShowDemo } from '../components';
 
 // Menu app designed for mobile menu viewing. No ordering functionality.
 
@@ -11,6 +11,7 @@ const App = () => {
       <LanguageSelect/>
       <Menu />
       {/* <Navbar/> */}
+      <NavbarV2 />
     </div>
   );
 };

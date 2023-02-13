@@ -5,16 +5,44 @@ import Items from './Items';
 
 const Menu = () => {
     const appetizers = Database.listApps(); // an array of objects
-    return(
+    return (
         <div className='menu'>
-            {appetizers.map(item => <Items 
-            engName={item.engName} 
-            engDescription={item.engDescription} 
-            korName={item.korName} 
-            korDescription={item.korDescription} 
-            price={item.price} 
-            image={item.image}/>)}
+
+            <div id='apps'>
+                <h1>Appetizers</h1>
+                {appetizers.map(item => <Items
+                    engName={item.engName}
+                    engDescription={item.engDescription}
+                    korName={item.korName}
+                    korDescription={item.korDescription}
+                    price={item.price}
+                    image={item.image} />)}
+            </div>
+
+            <div id='entrees'>
+                <h1>Entrees</h1>
+                {appetizers.map(item => <Items
+                    engName={item.engName}
+                    engDescription={item.engDescription}
+                    korName={item.korName}
+                    korDescription={item.korDescription}
+                    price={item.price}
+                    image={item.image} />)}
+            </div>
+
+            <div id='family'>
+                <h1>Family Meals</h1>
+                {appetizers.map(item => <Items
+                    engName={item.engName}
+                    engDescription={item.engDescription}
+                    korName={item.korName}
+                    korDescription={item.korDescription}
+                    price={item.price}
+                    image={item.image} />)}
+            </div>
+
         </div>
+
     )
 
 };

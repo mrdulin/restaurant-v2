@@ -1,19 +1,80 @@
-#root, #window, body{
-  min-height: 100vh;
-  position: relative
+* {
+  font-family: "AACHEN BOLD", sans-serif;
 }
 
-/* #navbar {
-  background-color: rgb(255, 0, 0);
-  position: fixed;
-  top:0;
-  width: 100vw;
-  height: 20vh;
-} */
+.apps {
+  background-color: rgb(223, 223, 132) !important;
+}
 
-#window {
-  flex-direction: column;
-  position: static;
+.entrees {
+  background-color: rgb(174, 230, 121) !important;
+}
+
+.family {
+  background-color: rgb(206, 144, 69) !important;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+#menu {
+  position: fixed;
+  bottom: 13vh;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 13vh;
+  max-height: 80px;
+  min-height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: burlywood;
+  background-color: grey;
+  font-size: 3vw;
+}
+
+nav li {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li:nth-child(-n + 3) {
+  flex-grow: 1;
+  width: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
 }
 
 .item {
@@ -31,18 +92,6 @@
   display: none;
 }
 
-.topStick {
-  position: fixed;
-  top: 100;
-  display: none;
-}
-
-.bottomStick {
-  position: fix;
-  bottom: 0;
-  display: none;
-}
-
-.english {
+/* .english {
   color: blue;
-}
+} */
